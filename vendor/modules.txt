@@ -1,9 +1,93 @@
+# github.com/BurntSushi/toml v0.3.1
+github.com/BurntSushi/toml
+# github.com/StackExchange/wmi v0.0.0-20190523213315-cbe66965904d
+github.com/StackExchange/wmi
+# github.com/VividCortex/ewma v1.1.1
+github.com/VividCortex/ewma
+# github.com/ajg/form v1.5.1
+github.com/ajg/form
+# github.com/aws/aws-sdk-go v1.35.3
+github.com/aws/aws-sdk-go/aws
+github.com/aws/aws-sdk-go/aws/awserr
+github.com/aws/aws-sdk-go/aws/awsutil
+github.com/aws/aws-sdk-go/aws/client
+github.com/aws/aws-sdk-go/aws/client/metadata
+github.com/aws/aws-sdk-go/aws/corehandlers
+github.com/aws/aws-sdk-go/aws/credentials
+github.com/aws/aws-sdk-go/aws/credentials/ec2rolecreds
+github.com/aws/aws-sdk-go/aws/credentials/endpointcreds
+github.com/aws/aws-sdk-go/aws/credentials/processcreds
+github.com/aws/aws-sdk-go/aws/credentials/stscreds
+github.com/aws/aws-sdk-go/aws/csm
+github.com/aws/aws-sdk-go/aws/defaults
+github.com/aws/aws-sdk-go/aws/ec2metadata
+github.com/aws/aws-sdk-go/aws/endpoints
+github.com/aws/aws-sdk-go/aws/request
+github.com/aws/aws-sdk-go/aws/session
+github.com/aws/aws-sdk-go/aws/signer/v4
+github.com/aws/aws-sdk-go/internal/context
+github.com/aws/aws-sdk-go/internal/ini
+github.com/aws/aws-sdk-go/internal/sdkio
+github.com/aws/aws-sdk-go/internal/sdkmath
+github.com/aws/aws-sdk-go/internal/sdkrand
+github.com/aws/aws-sdk-go/internal/sdkuri
+github.com/aws/aws-sdk-go/internal/shareddefaults
+github.com/aws/aws-sdk-go/internal/strings
+github.com/aws/aws-sdk-go/internal/sync/singleflight
+github.com/aws/aws-sdk-go/private/protocol
+github.com/aws/aws-sdk-go/private/protocol/json/jsonutil
+github.com/aws/aws-sdk-go/private/protocol/jsonrpc
+github.com/aws/aws-sdk-go/private/protocol/query
+github.com/aws/aws-sdk-go/private/protocol/query/queryutil
+github.com/aws/aws-sdk-go/private/protocol/rest
+github.com/aws/aws-sdk-go/private/protocol/xml/xmlutil
+github.com/aws/aws-sdk-go/service/kms
+github.com/aws/aws-sdk-go/service/sts
+github.com/aws/aws-sdk-go/service/sts/stsiface
+# github.com/beorn7/perks v1.0.1
+github.com/beorn7/perks/quantile
 # github.com/census-instrumentation/opencensus-proto v0.2.1
 github.com/census-instrumentation/opencensus-proto/gen-go/resource/v1
 github.com/census-instrumentation/opencensus-proto/gen-go/trace/v1
+# github.com/cespare/xxhash v1.1.0
+github.com/cespare/xxhash
+# github.com/cespare/xxhash/v2 v2.1.1
+github.com/cespare/xxhash/v2
+# github.com/cheggaaa/pb/v3 v3.0.4
+github.com/cheggaaa/pb/v3
+github.com/cheggaaa/pb/v3/termutil
 # github.com/cncf/udpa/go v0.0.0-20201120205902-5459f2c99403
 github.com/cncf/udpa/go/udpa/annotations
 github.com/cncf/udpa/go/xds/core/v3
+# github.com/coocood/bbloom v0.0.0-20190830030839-58deb6228d64
+github.com/coocood/bbloom
+# github.com/coocood/rtutil v0.0.0-20190304133409-c84515f646f2
+github.com/coocood/rtutil
+# github.com/coreos/go-semver v0.3.0
+github.com/coreos/go-semver/semver
+# github.com/coreos/go-systemd v0.0.0-20190719114852-fd7a80b32e1f
+github.com/coreos/go-systemd/journal
+# github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f
+github.com/coreos/pkg/capnslog
+# github.com/cznic/mathutil v0.0.0-20181122101859-297441e03548
+github.com/cznic/mathutil
+# github.com/cznic/sortutil v0.0.0-20181122101858-f5f958428db8
+github.com/cznic/sortutil
+# github.com/danjacques/gofslock v0.0.0-20191023191349-0a45f885bc37
+github.com/danjacques/gofslock/fslock
+# github.com/davecgh/go-spew v1.1.1
+github.com/davecgh/go-spew/spew
+# github.com/dgraph-io/ristretto v0.0.1
+github.com/dgraph-io/ristretto
+github.com/dgraph-io/ristretto/z
+# github.com/dgrijalva/jwt-go v3.2.0+incompatible
+github.com/dgrijalva/jwt-go
+# github.com/dgryski/go-farm v0.0.0-20190423205320-6a90982ecee2
+github.com/dgryski/go-farm
+# github.com/docker/go-units v0.4.0
+github.com/docker/go-units
+# github.com/dustin/go-humanize v1.0.0
+github.com/dustin/go-humanize
 # github.com/envoyproxy/go-control-plane v0.9.8
 ## explicit
 github.com/envoyproxy/go-control-plane/envoy/annotations
@@ -16,6 +100,7 @@ github.com/envoyproxy/go-control-plane/envoy/config/route/v3
 github.com/envoyproxy/go-control-plane/envoy/config/trace/v3
 github.com/envoyproxy/go-control-plane/envoy/data/accesslog/v3
 github.com/envoyproxy/go-control-plane/envoy/extensions/filters/network/http_connection_manager/v3
+github.com/envoyproxy/go-control-plane/envoy/extensions/filters/network/tcp_proxy/v3
 github.com/envoyproxy/go-control-plane/envoy/extensions/transport_sockets/tls/v3
 github.com/envoyproxy/go-control-plane/envoy/service/accesslog/v3
 github.com/envoyproxy/go-control-plane/envoy/service/cluster/v3
@@ -40,6 +125,20 @@ github.com/envoyproxy/go-control-plane/pkg/test/v3
 github.com/envoyproxy/go-control-plane/pkg/wellknown
 # github.com/envoyproxy/protoc-gen-validate v0.1.0
 github.com/envoyproxy/protoc-gen-validate/validate
+# github.com/fatih/color v1.9.0
+github.com/fatih/color
+# github.com/fatih/structs v1.0.0
+github.com/fatih/structs
+# github.com/gavv/httpexpect/v2 v2.1.0
+## explicit
+github.com/gavv/httpexpect/v2
+# github.com/go-ole/go-ole v1.2.4
+github.com/go-ole/go-ole
+github.com/go-ole/go-ole/oleutil
+# github.com/gogo/protobuf v1.3.1
+github.com/gogo/protobuf/gogoproto
+github.com/gogo/protobuf/proto
+github.com/gogo/protobuf/protoc-gen-gogo/descriptor
 # github.com/golang/protobuf v1.4.2
 ## explicit
 github.com/golang/protobuf/jsonpb
@@ -52,24 +151,475 @@ github.com/golang/protobuf/ptypes/empty
 github.com/golang/protobuf/ptypes/struct
 github.com/golang/protobuf/ptypes/timestamp
 github.com/golang/protobuf/ptypes/wrappers
-# golang.org/x/net v0.0.0-20190311183353-d8887717615a
+# github.com/golang/snappy v0.0.2-0.20190904063534-ff6b7dc882cf
+github.com/golang/snappy
+# github.com/google/btree v1.0.0
+github.com/google/btree
+# github.com/google/go-cmp v0.5.2
+## explicit
+github.com/google/go-cmp/cmp
+github.com/google/go-cmp/cmp/internal/diff
+github.com/google/go-cmp/cmp/internal/flags
+github.com/google/go-cmp/cmp/internal/function
+github.com/google/go-cmp/cmp/internal/value
+# github.com/google/go-querystring v1.0.0
+github.com/google/go-querystring/query
+# github.com/google/uuid v1.1.1
+## explicit
+github.com/google/uuid
+# github.com/gorilla/websocket v1.4.1
+github.com/gorilla/websocket
+# github.com/grpc-ecosystem/go-grpc-middleware v1.1.0
+github.com/grpc-ecosystem/go-grpc-middleware
+github.com/grpc-ecosystem/go-grpc-middleware/tags
+github.com/grpc-ecosystem/go-grpc-middleware/tracing/opentracing
+github.com/grpc-ecosystem/go-grpc-middleware/util/metautils
+# github.com/imkira/go-interpol v1.0.0
+github.com/imkira/go-interpol
+# github.com/jmespath/go-jmespath v0.4.0
+github.com/jmespath/go-jmespath
+# github.com/jonboulle/clockwork v0.1.0
+github.com/jonboulle/clockwork
+# github.com/json-iterator/go v1.1.9
+github.com/json-iterator/go
+# github.com/juju/ratelimit v1.0.1
+github.com/juju/ratelimit
+# github.com/klauspost/compress v1.10.5
+github.com/klauspost/compress/flate
+github.com/klauspost/compress/fse
+github.com/klauspost/compress/gzip
+github.com/klauspost/compress/huff0
+github.com/klauspost/compress/snappy
+github.com/klauspost/compress/zlib
+github.com/klauspost/compress/zstd
+github.com/klauspost/compress/zstd/internal/xxhash
+# github.com/klauspost/cpuid v1.2.1
+github.com/klauspost/cpuid
+# github.com/konsorten/go-windows-terminal-sequences v1.0.3
+github.com/konsorten/go-windows-terminal-sequences
+# github.com/labstack/echo/v4 v4.1.17
+## explicit
+github.com/labstack/echo/v4
+# github.com/labstack/gommon v0.3.0
+github.com/labstack/gommon/color
+github.com/labstack/gommon/log
+# github.com/mattn/go-colorable v0.1.7
+github.com/mattn/go-colorable
+# github.com/mattn/go-isatty v0.0.12
+github.com/mattn/go-isatty
+# github.com/mattn/go-runewidth v0.0.7
+github.com/mattn/go-runewidth
+# github.com/matttproud/golang_protobuf_extensions v1.0.1
+github.com/matttproud/golang_protobuf_extensions/pbutil
+# github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
+github.com/modern-go/concurrent
+# github.com/modern-go/reflect2 v1.0.1
+github.com/modern-go/reflect2
+# github.com/ncw/directio v1.0.4
+github.com/ncw/directio
+# github.com/ngaut/unistore v0.0.0-20201217024625-f53801ce8d4f
+github.com/ngaut/unistore/config
+github.com/ngaut/unistore/lockstore
+github.com/ngaut/unistore/metrics
+github.com/ngaut/unistore/pd
+github.com/ngaut/unistore/rocksdb
+github.com/ngaut/unistore/server
+github.com/ngaut/unistore/tikv
+github.com/ngaut/unistore/tikv/dbreader
+github.com/ngaut/unistore/tikv/mvcc
+github.com/ngaut/unistore/tikv/raftstore
+github.com/ngaut/unistore/tikv/raftstore/raftlog
+github.com/ngaut/unistore/util
+github.com/ngaut/unistore/util/lockwaiter
+# github.com/opentracing/opentracing-go v1.1.0
+github.com/opentracing/opentracing-go
+github.com/opentracing/opentracing-go/ext
+github.com/opentracing/opentracing-go/log
+# github.com/pierrec/lz4 v2.5.2+incompatible
+github.com/pierrec/lz4
+github.com/pierrec/lz4/internal/xxh32
+# github.com/pingcap/badger v1.5.1-0.20200908111422-2e78ee155d19
+github.com/pingcap/badger
+github.com/pingcap/badger/cache
+github.com/pingcap/badger/cache/z
+github.com/pingcap/badger/epoch
+github.com/pingcap/badger/fileutil
+github.com/pingcap/badger/options
+github.com/pingcap/badger/protos
+github.com/pingcap/badger/surf
+github.com/pingcap/badger/table
+github.com/pingcap/badger/table/memtable
+github.com/pingcap/badger/table/sstable
+github.com/pingcap/badger/y
+# github.com/pingcap/br v4.0.0-beta.2.0.20201014031603-5676c8fdad1a+incompatible
+github.com/pingcap/br/pkg/errors
+github.com/pingcap/br/pkg/manual
+github.com/pingcap/br/pkg/utils
+# github.com/pingcap/errors v0.11.5-0.20201126102027-b0a155152ca3
+github.com/pingcap/errors
+# github.com/pingcap/failpoint v0.0.0-20200702092429-9f69995143ce
+github.com/pingcap/failpoint
+# github.com/pingcap/goleveldb v0.0.0-20191226122134-f82aafb29989
+github.com/pingcap/goleveldb/leveldb
+github.com/pingcap/goleveldb/leveldb/cache
+github.com/pingcap/goleveldb/leveldb/comparer
+github.com/pingcap/goleveldb/leveldb/errors
+github.com/pingcap/goleveldb/leveldb/filter
+github.com/pingcap/goleveldb/leveldb/iterator
+github.com/pingcap/goleveldb/leveldb/journal
+github.com/pingcap/goleveldb/leveldb/memdb
+github.com/pingcap/goleveldb/leveldb/opt
+github.com/pingcap/goleveldb/leveldb/storage
+github.com/pingcap/goleveldb/leveldb/table
+github.com/pingcap/goleveldb/leveldb/util
+# github.com/pingcap/kvproto v0.0.0-20201215060142-f3dafca4c7fd
+github.com/pingcap/kvproto/pkg/backup
+github.com/pingcap/kvproto/pkg/coprocessor
+github.com/pingcap/kvproto/pkg/deadlock
+github.com/pingcap/kvproto/pkg/debugpb
+github.com/pingcap/kvproto/pkg/encryptionpb
+github.com/pingcap/kvproto/pkg/eraftpb
+github.com/pingcap/kvproto/pkg/errorpb
+github.com/pingcap/kvproto/pkg/import_sstpb
+github.com/pingcap/kvproto/pkg/kvrpcpb
+github.com/pingcap/kvproto/pkg/metapb
+github.com/pingcap/kvproto/pkg/mpp
+github.com/pingcap/kvproto/pkg/pdpb
+github.com/pingcap/kvproto/pkg/raft_cmdpb
+github.com/pingcap/kvproto/pkg/raft_serverpb
+github.com/pingcap/kvproto/pkg/replication_modepb
+github.com/pingcap/kvproto/pkg/sharedbytes
+github.com/pingcap/kvproto/pkg/span
+github.com/pingcap/kvproto/pkg/tikvpb
+# github.com/pingcap/log v0.0.0-20201112100606-8f1e84a3abc8
+github.com/pingcap/log
+# github.com/pingcap/parser v0.0.0-20201222091346-02c8ff27d0bc
+github.com/pingcap/parser
+github.com/pingcap/parser/ast
+github.com/pingcap/parser/auth
+github.com/pingcap/parser/charset
+github.com/pingcap/parser/format
+github.com/pingcap/parser/model
+github.com/pingcap/parser/mysql
+github.com/pingcap/parser/opcode
+github.com/pingcap/parser/terror
+github.com/pingcap/parser/types
+# github.com/pingcap/tidb v1.1.0-beta.0.20210104083715-536dfdfe2f72
+## explicit
+github.com/pingcap/tidb/config
+github.com/pingcap/tidb/ddl/placement
+github.com/pingcap/tidb/ddl/util
+github.com/pingcap/tidb/domain/infosync
+github.com/pingcap/tidb/errno
+github.com/pingcap/tidb/expression
+github.com/pingcap/tidb/expression/aggregation
+github.com/pingcap/tidb/kv
+github.com/pingcap/tidb/meta
+github.com/pingcap/tidb/meta/autoid
+github.com/pingcap/tidb/metrics
+github.com/pingcap/tidb/owner
+github.com/pingcap/tidb/planner/util
+github.com/pingcap/tidb/privilege
+github.com/pingcap/tidb/sessionctx
+github.com/pingcap/tidb/sessionctx/binloginfo
+github.com/pingcap/tidb/sessionctx/stmtctx
+github.com/pingcap/tidb/sessionctx/variable
+github.com/pingcap/tidb/statistics
+github.com/pingcap/tidb/store/mockstore
+github.com/pingcap/tidb/store/mockstore/cluster
+github.com/pingcap/tidb/store/mockstore/mocktikv
+github.com/pingcap/tidb/store/mockstore/unistore
+github.com/pingcap/tidb/store/mockstore/unistore/client
+github.com/pingcap/tidb/store/mockstore/unistore/cophandler
+github.com/pingcap/tidb/store/tikv
+github.com/pingcap/tidb/store/tikv/latch
+github.com/pingcap/tidb/store/tikv/oracle
+github.com/pingcap/tidb/store/tikv/oracle/oracles
+github.com/pingcap/tidb/store/tikv/tikvrpc
+github.com/pingcap/tidb/structure
+github.com/pingcap/tidb/table
+github.com/pingcap/tidb/table/tables
+github.com/pingcap/tidb/tablecodec
+github.com/pingcap/tidb/types
+github.com/pingcap/tidb/types/json
+github.com/pingcap/tidb/types/parser_driver
+github.com/pingcap/tidb/util
+github.com/pingcap/tidb/util/checksum
+github.com/pingcap/tidb/util/chunk
+github.com/pingcap/tidb/util/codec
+github.com/pingcap/tidb/util/collate
+github.com/pingcap/tidb/util/dbterror
+github.com/pingcap/tidb/util/deadlock
+github.com/pingcap/tidb/util/disjointset
+github.com/pingcap/tidb/util/disk
+github.com/pingcap/tidb/util/encrypt
+github.com/pingcap/tidb/util/execdetails
+github.com/pingcap/tidb/util/fastrand
+github.com/pingcap/tidb/util/generatedexpr
+github.com/pingcap/tidb/util/hack
+github.com/pingcap/tidb/util/israce
+github.com/pingcap/tidb/util/kvcache
+github.com/pingcap/tidb/util/logutil
+github.com/pingcap/tidb/util/math
+github.com/pingcap/tidb/util/memory
+github.com/pingcap/tidb/util/mock
+github.com/pingcap/tidb/util/mvmap
+github.com/pingcap/tidb/util/parser
+github.com/pingcap/tidb/util/pdapi
+github.com/pingcap/tidb/util/plancodec
+github.com/pingcap/tidb/util/printer
+github.com/pingcap/tidb/util/ranger
+github.com/pingcap/tidb/util/rowcodec
+github.com/pingcap/tidb/util/set
+github.com/pingcap/tidb/util/sqlexec
+github.com/pingcap/tidb/util/storeutil
+github.com/pingcap/tidb/util/stringutil
+github.com/pingcap/tidb/util/texttree
+github.com/pingcap/tidb/util/timeutil
+github.com/pingcap/tidb/util/versioninfo
+# github.com/pingcap/tidb-tools v4.0.9-0.20201127090955-2707c97b3853+incompatible
+github.com/pingcap/tidb-tools/pkg/etcd
+github.com/pingcap/tidb-tools/pkg/utils
+github.com/pingcap/tidb-tools/tidb-binlog/node
+github.com/pingcap/tidb-tools/tidb-binlog/pump_client
+# github.com/pingcap/tipb v0.0.0-20201209065231-aa39b1b86217
+github.com/pingcap/tipb/go-binlog
+github.com/pingcap/tipb/go-tipb
+github.com/pingcap/tipb/sharedbytes
+# github.com/pkg/errors v0.9.1
+## explicit
+github.com/pkg/errors
+# github.com/pmezard/go-difflib v1.0.0
+github.com/pmezard/go-difflib/difflib
+# github.com/prometheus/client_golang v1.5.1
+github.com/prometheus/client_golang/prometheus
+github.com/prometheus/client_golang/prometheus/internal
+github.com/prometheus/client_golang/prometheus/promhttp
+# github.com/prometheus/client_model v0.2.0
+github.com/prometheus/client_model/go
+# github.com/prometheus/common v0.9.1
+github.com/prometheus/common/expfmt
+github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg
+github.com/prometheus/common/model
+# github.com/prometheus/procfs v0.0.8
+github.com/prometheus/procfs
+github.com/prometheus/procfs/internal/fs
+github.com/prometheus/procfs/internal/util
+# github.com/remyoudompheng/bigfft v0.0.0-20200410134404-eec4a21b6bb0
+github.com/remyoudompheng/bigfft
+# github.com/sergi/go-diff v1.0.1-0.20180205163309-da645544ed44
+github.com/sergi/go-diff/diffmatchpatch
+# github.com/shirou/gopsutil v2.20.6+incompatible
+github.com/shirou/gopsutil/disk
+github.com/shirou/gopsutil/internal/common
+github.com/shirou/gopsutil/mem
+# github.com/sirupsen/logrus v1.6.0
+github.com/sirupsen/logrus
+# github.com/stretchr/testify v1.6.1
+github.com/stretchr/testify/assert
+github.com/stretchr/testify/require
+# github.com/syndtr/goleveldb v1.0.1-0.20190318030020-c3a204f8e965
+github.com/syndtr/goleveldb/leveldb
+github.com/syndtr/goleveldb/leveldb/cache
+github.com/syndtr/goleveldb/leveldb/comparer
+github.com/syndtr/goleveldb/leveldb/errors
+github.com/syndtr/goleveldb/leveldb/filter
+github.com/syndtr/goleveldb/leveldb/iterator
+github.com/syndtr/goleveldb/leveldb/journal
+github.com/syndtr/goleveldb/leveldb/memdb
+github.com/syndtr/goleveldb/leveldb/opt
+github.com/syndtr/goleveldb/leveldb/storage
+github.com/syndtr/goleveldb/leveldb/table
+github.com/syndtr/goleveldb/leveldb/util
+# github.com/tikv/pd v1.1.0-beta.0.20201125070607-d4b90eee0c70
+github.com/tikv/pd/client
+github.com/tikv/pd/pkg/btree
+github.com/tikv/pd/pkg/codec
+github.com/tikv/pd/pkg/encryption
+github.com/tikv/pd/pkg/errs
+github.com/tikv/pd/pkg/etcdutil
+github.com/tikv/pd/pkg/grpcutil
+github.com/tikv/pd/pkg/logutil
+github.com/tikv/pd/pkg/slice
+github.com/tikv/pd/pkg/tsoutil
+github.com/tikv/pd/pkg/typeutil
+github.com/tikv/pd/server/core
+github.com/tikv/pd/server/core/storelimit
+github.com/tikv/pd/server/election
+github.com/tikv/pd/server/encryptionkm
+github.com/tikv/pd/server/kv
+github.com/tikv/pd/server/schedule/placement
+# github.com/twmb/murmur3 v1.1.3
+github.com/twmb/murmur3
+# github.com/uber-go/atomic v1.4.0
+github.com/uber-go/atomic
+# github.com/uber/jaeger-client-go v2.22.1+incompatible
+github.com/uber/jaeger-client-go
+github.com/uber/jaeger-client-go/config
+github.com/uber/jaeger-client-go/internal/baggage
+github.com/uber/jaeger-client-go/internal/baggage/remote
+github.com/uber/jaeger-client-go/internal/reporterstats
+github.com/uber/jaeger-client-go/internal/spanlog
+github.com/uber/jaeger-client-go/internal/throttler
+github.com/uber/jaeger-client-go/internal/throttler/remote
+github.com/uber/jaeger-client-go/log
+github.com/uber/jaeger-client-go/rpcmetrics
+github.com/uber/jaeger-client-go/thrift
+github.com/uber/jaeger-client-go/thrift-gen/agent
+github.com/uber/jaeger-client-go/thrift-gen/baggage
+github.com/uber/jaeger-client-go/thrift-gen/jaeger
+github.com/uber/jaeger-client-go/thrift-gen/sampling
+github.com/uber/jaeger-client-go/thrift-gen/zipkincore
+github.com/uber/jaeger-client-go/transport
+github.com/uber/jaeger-client-go/utils
+# github.com/uber/jaeger-lib v2.4.0+incompatible
+github.com/uber/jaeger-lib/metrics
+# github.com/valyala/bytebufferpool v1.0.0
+github.com/valyala/bytebufferpool
+# github.com/valyala/fasthttp v1.9.0
+github.com/valyala/fasthttp
+github.com/valyala/fasthttp/fasthttputil
+github.com/valyala/fasthttp/stackless
+# github.com/valyala/fasttemplate v1.2.1
+github.com/valyala/fasttemplate
+# github.com/xeipuuv/gojsonpointer v0.0.0-20180127040702-4e3ac2762d5f
+github.com/xeipuuv/gojsonpointer
+# github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415
+github.com/xeipuuv/gojsonreference
+# github.com/xeipuuv/gojsonschema v1.1.0
+github.com/xeipuuv/gojsonschema
+# github.com/xiang90/probing v0.0.0-20190116061207-43a291ad63a2
+github.com/xiang90/probing
+# github.com/yalp/jsonpath v0.0.0-20180802001716-5cc68e5049a0
+github.com/yalp/jsonpath
+# github.com/yudai/gojsondiff v1.0.0
+github.com/yudai/gojsondiff
+github.com/yudai/gojsondiff/formatter
+# github.com/yudai/golcs v0.0.0-20170316035057-ecda9a501e82
+github.com/yudai/golcs
+# github.com/zhangjinpeng1987/raft v0.0.0-20200819064223-df31bb68a018
+github.com/zhangjinpeng1987/raft
+# go.etcd.io/bbolt v1.3.4
+go.etcd.io/bbolt
+# go.etcd.io/etcd v0.5.0-alpha.5.0.20200824191128-ae9734ed278b
+go.etcd.io/etcd/auth
+go.etcd.io/etcd/auth/authpb
+go.etcd.io/etcd/client
+go.etcd.io/etcd/clientv3
+go.etcd.io/etcd/clientv3/balancer
+go.etcd.io/etcd/clientv3/balancer/connectivity
+go.etcd.io/etcd/clientv3/balancer/picker
+go.etcd.io/etcd/clientv3/balancer/resolver/endpoint
+go.etcd.io/etcd/clientv3/concurrency
+go.etcd.io/etcd/clientv3/credentials
+go.etcd.io/etcd/etcdserver
+go.etcd.io/etcd/etcdserver/api
+go.etcd.io/etcd/etcdserver/api/membership
+go.etcd.io/etcd/etcdserver/api/rafthttp
+go.etcd.io/etcd/etcdserver/api/snap
+go.etcd.io/etcd/etcdserver/api/snap/snappb
+go.etcd.io/etcd/etcdserver/api/v2discovery
+go.etcd.io/etcd/etcdserver/api/v2error
+go.etcd.io/etcd/etcdserver/api/v2http/httptypes
+go.etcd.io/etcd/etcdserver/api/v2stats
+go.etcd.io/etcd/etcdserver/api/v2store
+go.etcd.io/etcd/etcdserver/api/v3alarm
+go.etcd.io/etcd/etcdserver/api/v3compactor
+go.etcd.io/etcd/etcdserver/api/v3rpc/rpctypes
+go.etcd.io/etcd/etcdserver/etcdserverpb
+go.etcd.io/etcd/lease
+go.etcd.io/etcd/lease/leasehttp
+go.etcd.io/etcd/lease/leasepb
+go.etcd.io/etcd/mvcc
+go.etcd.io/etcd/mvcc/backend
+go.etcd.io/etcd/mvcc/mvccpb
+go.etcd.io/etcd/pkg/adt
+go.etcd.io/etcd/pkg/contention
+go.etcd.io/etcd/pkg/cpuutil
+go.etcd.io/etcd/pkg/crc
+go.etcd.io/etcd/pkg/fileutil
+go.etcd.io/etcd/pkg/httputil
+go.etcd.io/etcd/pkg/idutil
+go.etcd.io/etcd/pkg/ioutil
+go.etcd.io/etcd/pkg/logutil
+go.etcd.io/etcd/pkg/netutil
+go.etcd.io/etcd/pkg/pathutil
+go.etcd.io/etcd/pkg/pbutil
+go.etcd.io/etcd/pkg/runtime
+go.etcd.io/etcd/pkg/schedule
+go.etcd.io/etcd/pkg/srv
+go.etcd.io/etcd/pkg/systemd
+go.etcd.io/etcd/pkg/tlsutil
+go.etcd.io/etcd/pkg/traceutil
+go.etcd.io/etcd/pkg/transport
+go.etcd.io/etcd/pkg/types
+go.etcd.io/etcd/pkg/wait
+go.etcd.io/etcd/raft
+go.etcd.io/etcd/raft/confchange
+go.etcd.io/etcd/raft/quorum
+go.etcd.io/etcd/raft/raftpb
+go.etcd.io/etcd/raft/tracker
+go.etcd.io/etcd/version
+go.etcd.io/etcd/wal
+go.etcd.io/etcd/wal/walpb
+# go.uber.org/atomic v1.7.0
+go.uber.org/atomic
+# go.uber.org/multierr v1.6.0
+go.uber.org/multierr
+# go.uber.org/zap v1.16.0
+## explicit
+go.uber.org/zap
+go.uber.org/zap/buffer
+go.uber.org/zap/internal/bufferpool
+go.uber.org/zap/internal/color
+go.uber.org/zap/internal/exit
+go.uber.org/zap/zapcore
+# golang.org/x/crypto v0.0.0-20200820211705-5c72a883971a
+golang.org/x/crypto/acme
+golang.org/x/crypto/acme/autocert
+golang.org/x/crypto/bcrypt
+golang.org/x/crypto/blowfish
+# golang.org/x/net v0.0.0-20200904194848-62affa334b73
+golang.org/x/net/context
 golang.org/x/net/http/httpguts
 golang.org/x/net/http2
+golang.org/x/net/http2/h2c
 golang.org/x/net/http2/hpack
 golang.org/x/net/idna
 golang.org/x/net/internal/timeseries
+golang.org/x/net/publicsuffix
 golang.org/x/net/trace
-# golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a
+# golang.org/x/sync v0.0.0-20201020160332-67f06af15bc9
+golang.org/x/sync/errgroup
+golang.org/x/sync/singleflight
+# golang.org/x/sys v0.0.0-20200826173525-f9321e4c35a6
+golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/unix
-# golang.org/x/text v0.3.0
+golang.org/x/sys/windows
+# golang.org/x/text v0.3.4
+golang.org/x/text/encoding
+golang.org/x/text/encoding/charmap
+golang.org/x/text/encoding/internal
+golang.org/x/text/encoding/internal/identifier
+golang.org/x/text/encoding/japanese
+golang.org/x/text/encoding/korean
+golang.org/x/text/encoding/simplifiedchinese
+golang.org/x/text/encoding/traditionalchinese
+golang.org/x/text/encoding/unicode
+golang.org/x/text/internal/utf8internal
+golang.org/x/text/runes
 golang.org/x/text/secure/bidirule
 golang.org/x/text/transform
 golang.org/x/text/unicode/bidi
 golang.org/x/text/unicode/norm
-# google.golang.org/genproto v0.0.0-20190819201941-24fa4b261c55
+# golang.org/x/time v0.0.0-20191024005414-555d28b269f0
+golang.org/x/time/rate
+# golang.org/x/tools v0.0.0-20200820010801-b793a1359eac
+golang.org/x/tools/container/intsets
+# google.golang.org/genproto v0.0.0-20200224152610-e50cd9704f63
 google.golang.org/genproto/googleapis/api/annotations
 google.golang.org/genproto/googleapis/rpc/status
-# google.golang.org/grpc v1.27.0
+# google.golang.org/grpc v1.27.1
 ## explicit
 google.golang.org/grpc
 google.golang.org/grpc/attributes
@@ -83,6 +633,7 @@ google.golang.org/grpc/connectivity
 google.golang.org/grpc/credentials
 google.golang.org/grpc/credentials/internal
 google.golang.org/grpc/encoding
+google.golang.org/grpc/encoding/gzip
 google.golang.org/grpc/encoding/proto
 google.golang.org/grpc/grpclog
 google.golang.org/grpc/internal
@@ -103,6 +654,8 @@ google.golang.org/grpc/metadata
 google.golang.org/grpc/naming
 google.golang.org/grpc/peer
 google.golang.org/grpc/resolver
+google.golang.org/grpc/resolver/dns
+google.golang.org/grpc/resolver/passthrough
 google.golang.org/grpc/serviceconfig
 google.golang.org/grpc/stats
 google.golang.org/grpc/status
@@ -145,6 +698,12 @@ google.golang.org/protobuf/types/known/emptypb
 google.golang.org/protobuf/types/known/structpb
 google.golang.org/protobuf/types/known/timestamppb
 google.golang.org/protobuf/types/known/wrapperspb
-# gopkg.in/yaml.v2 v2.2.2
+# gopkg.in/natefinch/lumberjack.v2 v2.0.0
+gopkg.in/natefinch/lumberjack.v2
+# gopkg.in/yaml.v2 v2.3.0
 ## explicit
 gopkg.in/yaml.v2
+# gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c
+gopkg.in/yaml.v3
+# moul.io/http2curl v1.0.1-0.20190925090545-5cd742060b0e
+moul.io/http2curl

@@ -2,17 +2,31 @@ package config
 
 import (
 	"io/ioutil"
-	"log"
 
 	"gopkg.in/yaml.v2"
 )
 
 type Config struct {
 	Controlplane *Controlplane `yaml:"controlplane"`
+	Admin        *Admin        `yaml:"admin"`
+	Storage      *Storage      `yaml:"storage"`
 }
 
 type Controlplane struct {
 	ListenAddress string `yaml:"listen_address"`
+}
+
+type Admin struct {
+	ListenAddress string `yaml:"listen_address"`
+}
+
+type Storage struct {
+	Type string `yaml:"type"`
+	TiKV *TiKV  `yaml:"tikv"`
+}
+
+type TiKV struct {
+	Address string `yaml:"address"`
 }
 
 type Source interface {
@@ -52,6 +66,5 @@ func NewFile(path string) (*File, error) {
 }
 
 func (f *File) GetConfig() *Config {
-	log.Println(f.c)
 	return f.c
 }

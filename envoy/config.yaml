@@ -1,2 +1,10 @@
 controlplane:
   listen_address: :18000
+
+admin:
+  listen_address: :18690
+
+storage:
+  type: dummy
+  tikv:
+    address: tikv://127.0.0.1:2379

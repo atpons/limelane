@@ -11,7 +11,7 @@ import (
 	runtimeservice "github.com/envoyproxy/go-control-plane/envoy/service/runtime/v3"
 	secretservice "github.com/envoyproxy/go-control-plane/envoy/service/secret/v3"
 	serverv3 "github.com/envoyproxy/go-control-plane/pkg/server/v3"
-	"github.com/lifememoryteam/limeproxy/pkg/xds"
+	"github.com/atpons/limelane/pkg/xds"
 	"google.golang.org/grpc"
 )
 
@@ -56,4 +56,8 @@ func (s *Server) Run(addr string) error {
 		return err
 	}
 	return nil
+}
+
+func (s *Server) Close() {
+	s.Server.GracefulStop()
 }
