@@ -14,18 +14,21 @@ import (
 
 	"github.com/golang/protobuf/ptypes"
 
+	"github.com/atpons/limelane/pkg/repository"
+	"github.com/atpons/limelane/pkg/service"
 	cluster "github.com/envoyproxy/go-control-plane/envoy/config/cluster/v3"
+	tapmatcherv3 "github.com/envoyproxy/go-control-plane/envoy/config/common/matcher/v3"
 	core "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 	endpoint "github.com/envoyproxy/go-control-plane/envoy/config/endpoint/v3"
 	listener "github.com/envoyproxy/go-control-plane/envoy/config/listener/v3"
+	tapconfigv3 "github.com/envoyproxy/go-control-plane/envoy/config/tap/v3"
+	tapv3 "github.com/envoyproxy/go-control-plane/envoy/extensions/common/tap/v3"
 	tcpproxy "github.com/envoyproxy/go-control-plane/envoy/extensions/filters/network/tcp_proxy/v3"
-
+	tap "github.com/envoyproxy/go-control-plane/envoy/extensions/transport_sockets/tap/v3"
 	cachev3 "github.com/envoyproxy/go-control-plane/pkg/cache/v3"
 	serverv3 "github.com/envoyproxy/go-control-plane/pkg/server/v3"
 	testv3 "github.com/envoyproxy/go-control-plane/pkg/test/v3"
 	"github.com/envoyproxy/go-control-plane/pkg/wellknown"
-	"github.com/atpons/limelane/pkg/repository"
-	"github.com/atpons/limelane/pkg/service"
 )
 
 type XDS struct {
@@ -146,6 +149,34 @@ func makeTCPListener(listenerName, clusterName string, port uint32) *listener.Li
 		panic(err)
 	}
 
+	tapConf := &tap.Tap{
+		CommonConfig: &tapv3.CommonExtensionConfig{
+			ConfigType: &tapv3.CommonExtensionConfig_StaticConfig{
+				StaticConfig: &tapconfigv3.TapConfig{
+					Match: &tapmatcherv3.MatchPredicate{
+						Rule: &tapmatcherv3.MatchPredicate_AnyMatch{AnyMatch: true},
+					},
+					OutputConfig: &tapconfigv3.OutputConfig{
+						Sinks: []*tapconfigv3.OutputSink{
+							{
+								Format:         tapconfigv3.OutputSink_PROTO_TEXT,
+								OutputSinkType: &tapconfigv3.OutputSink_FilePerTap{FilePerTap: &tapconfigv3.FilePerTapSink{PathPrefix: fmt.Sprintf("/tmp/limelane2_%s", listenerName)}},
+							},
+						},
+					},
+				},
+			},
+		},
+		TransportSocket: &core.TransportSocket{
+			Name: wellknown.TransportSocketRawBuffer,
+		},
+	}
+
+	pbtap, err := ptypes.MarshalAny(tapConf)
+	if err != nil {
+		panic(err)
+	}
+
 	l := &listener.Listener{
 		Name: listenerName,
 		Address: &core.Address{
@@ -161,7 +192,12 @@ func makeTCPListener(listenerName, clusterName string, port uint32) *listener.Li
 		},
 		FilterChains: []*listener.FilterChain{
 			{
+				TransportSocket: &core.TransportSocket{
+					Name:       wellknown.TransportSocketTap,
+					ConfigType: &core.TransportSocket_TypedConfig{TypedConfig: pbtap},
+				},
 				Filters: []*listener.Filter{
+
 					{
 						Name: wellknown.TCPProxy,
 						ConfigType: &listener.Filter_TypedConfig{

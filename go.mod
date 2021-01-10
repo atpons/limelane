@@ -7,7 +7,9 @@ require (
 	github.com/gavv/httpexpect/v2 v2.1.0
 	github.com/golang/protobuf v1.4.2
 	github.com/google/go-cmp v0.5.2
+	github.com/google/gopacket v1.1.19
 	github.com/google/uuid v1.1.1
+	github.com/k0kubun/pp v3.0.1+incompatible // indirect
 	github.com/labstack/echo/v4 v4.1.17
 	github.com/pingcap/tidb v1.1.0-beta.0.20210104083715-536dfdfe2f72
 	github.com/pkg/errors v0.9.1

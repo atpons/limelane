@@ -9,8 +9,12 @@ Support TiKV as snapshot database backend.
 - [x] TCP proxy EDS/CDS
 - [x] Configurable HTTP API
 - [x] Support persistent storage (TiKV)
-- [ ] Traffic tapping config for listener
+- [x] Traffic tapping config for listener
 - [ ] Metrics
+
+### Tools
+- gotap2pcap
+  - Convert Envoy's tap trace Protocol Buffer file into a PCAP file, and it is only written in Golang.
 
 ### Author
 atpons

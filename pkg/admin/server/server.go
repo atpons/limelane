@@ -2,6 +2,7 @@ package server
 
 import (
 	"context"
+	"github.com/atpons/limelane/pkg/logutil"
 	"net/http"
 
 	"github.com/atpons/limelane/pkg/echoext/logging"
@@ -84,6 +85,8 @@ func (h *Server) Register(c echo.Context) error {
 			return exception.InternalServerError(errors.WithStack(err))
 		}
 	}
+
+	logutil.L().Info("syncing")
 
 	if err := h.xds.Sync(); err != nil {
 		return exception.InternalServerError(errors.WithStack(err))
