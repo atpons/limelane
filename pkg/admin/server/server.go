@@ -2,21 +2,17 @@ package server
 
 import (
 	"context"
-	"github.com/atpons/limelane/pkg/logutil"
 	"net/http"
 
-	"github.com/atpons/limelane/pkg/echoext/logging"
-
-	"github.com/pkg/errors"
-
-	"github.com/atpons/limelane/pkg/echoext/requestid"
-
 	"github.com/atpons/limelane/pkg/echoext/exception"
-
-	"github.com/labstack/echo/v4"
+	"github.com/atpons/limelane/pkg/echoext/logging"
+	"github.com/atpons/limelane/pkg/echoext/requestid"
+	"github.com/atpons/limelane/pkg/logutil"
 	"github.com/atpons/limelane/pkg/model"
 	"github.com/atpons/limelane/pkg/repository"
 	"github.com/atpons/limelane/pkg/xds"
+	"github.com/labstack/echo/v4"
+	"github.com/pkg/errors"
 )
 
 type Server struct {
@@ -36,6 +32,12 @@ type Endpoint struct {
 	Upstream   string `json:"upstream"`
 	Port       uint32 `json:"port"`
 	ListenPort uint32 `json:"listen_port"`
+	Tap        Tap    `json:"tap,omitempty"`
+}
+
+type Tap struct {
+	Enabled  bool   `json:"enabled"`
+	SinkType string `json:"sink_type"`
 }
 
 func NewServer(repository repository.Repository, xds *xds.XDS) *Server {
@@ -135,6 +137,10 @@ func (h *Server) Add(c echo.Context) error {
 		Upstream:   s.Upstream,
 		Port:       s.Port,
 		ListenPort: s.ListenPort,
+		Tap: &model.Tap{
+			Enabled:  s.Tap.Enabled,
+			SinkType: s.Tap.SinkType,
+		},
 	}); err != nil {
 		return exception.InternalServerError(errors.WithStack(err))
 	}

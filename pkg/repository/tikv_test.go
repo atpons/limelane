@@ -4,10 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/google/go-cmp/cmp"
-
 	"github.com/atpons/limelane/pkg/model"
-
+	"github.com/google/go-cmp/cmp"
 	"github.com/pingcap/tidb/store/mockstore"
 )
 

@@ -9,16 +9,14 @@ import (
 	"sync"
 	"syscall"
 
-	"go.uber.org/zap"
-
-	"github.com/atpons/limelane/pkg/logutil"
-
 	adminServer "github.com/atpons/limelane/pkg/admin/server"
 	"github.com/atpons/limelane/pkg/config"
+	"github.com/atpons/limelane/pkg/logutil"
 	"github.com/atpons/limelane/pkg/repository"
 	"github.com/atpons/limelane/pkg/server"
 	"github.com/atpons/limelane/pkg/service"
 	"github.com/atpons/limelane/pkg/xds"
+	"go.uber.org/zap"
 )
 
 func main() {

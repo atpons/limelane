@@ -15,6 +15,8 @@ Support TiKV as snapshot database backend.
 ### Tools
 - gotap2pcap
   - Convert Envoy's tap trace Protocol Buffer file into a PCAP file, and it is only written in Golang.
+- admintapclient
+  - Envoy's admin /tap endpoint client (HTTP/2) written in Golang.
 
 ### Author
 atpons

@@ -144,9 +144,13 @@ github.com/gavv/httpexpect/v2
 github.com/go-ole/go-ole
 github.com/go-ole/go-ole/oleutil
 # github.com/gogo/protobuf v1.3.1
+## explicit
 github.com/gogo/protobuf/gogoproto
+github.com/gogo/protobuf/jsonpb
 github.com/gogo/protobuf/proto
 github.com/gogo/protobuf/protoc-gen-gogo/descriptor
+github.com/gogo/protobuf/sortkeys
+github.com/gogo/protobuf/types
 # github.com/golang/protobuf v1.4.2
 ## explicit
 github.com/golang/protobuf/jsonpb
@@ -595,6 +599,7 @@ golang.org/x/crypto/acme/autocert
 golang.org/x/crypto/bcrypt
 golang.org/x/crypto/blowfish
 # golang.org/x/net v0.0.0-20200904194848-62affa334b73
+## explicit
 golang.org/x/net/bpf
 golang.org/x/net/context
 golang.org/x/net/http/httpguts

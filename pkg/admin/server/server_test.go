@@ -7,13 +7,12 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/atpons/limelane/pkg/model"
-
-	"github.com/gavv/httpexpect/v2"
 	"github.com/atpons/limelane/pkg/logutil"
+	"github.com/atpons/limelane/pkg/model"
 	"github.com/atpons/limelane/pkg/repository"
 	"github.com/atpons/limelane/pkg/service"
 	"github.com/atpons/limelane/pkg/xds"
+	"github.com/gavv/httpexpect/v2"
 )
 
 type testServer struct {

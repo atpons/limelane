@@ -3,11 +3,9 @@ package logutil
 import (
 	"sync/atomic"
 
-	"go.uber.org/zap/zapcore"
-
-	"go.uber.org/zap"
-
 	envoylog "github.com/envoyproxy/go-control-plane/pkg/log"
+	"go.uber.org/zap"
+	"go.uber.org/zap/zapcore"
 )
 
 var (
